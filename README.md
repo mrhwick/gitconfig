@@ -1,28 +1,12 @@
-[user]
+# Matt Hardwick's Git Configuration
 
-name = MRHwick
+These are my dark magic aliases that I prefer when I am using git.
 
-email = MatthewRHardwick@gmail.com
 
-[push]
+### Installation
 
-default = simple
-
-[alias]
-
-ls = log --pretty=format:"%C(yellow)%h\\ %Cgreen%cr\\ %Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate 
-
-ll = log --pretty=format:"%C(yellow)%h\\ %Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
-
-ld = log --pretty=format:"%C(yellow)%h\\ %Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --stat
-
-ci = commit
-
-st = status -s
-
-co = checkout
-
-down = pull
-
-up = push
-
+```
+git clone https://github.com/mrhwick/gitconfig.git
+cd gitconfig
+cat gitconfig >> ~/.gitconfig
+```
