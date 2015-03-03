@@ -10,6 +10,9 @@ ld = log --pretty=format:"%C(yellow)%h\\ %Cred%d\\ %Creset%s%Cblue\\ [%cn]" --de
 ci = commit
 st = status -s
 co = checkout
-down = pull
-up = push
-
+a = add
+ap = add -p
+rst = checkout staging; pull upstream
+feat = "!f() { git checkout -b feature/$1; }; f"
+fix = "!f() { git checkout -b hotfix/$1; }; f"
+up = "!f () { branch=\"$(git rev-parse --abbrev-ref HEAD)\"; git push origin $branch; }; f"
