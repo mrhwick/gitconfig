@@ -12,7 +12,7 @@ st = status -s
 co = checkout
 a = add
 ap = add -p
-rst = "!f() { git checkout staging; git pull upstream; }; f"
+rst = "!f() { git checkout dev; git pull upstream; }; f"
 feat = "!f() { git checkout -b feature/$1; }; f"
 fix = "!f() { git checkout -b hotfix/$1; }; f"
 up = "!f () { branch=\"$(git rev-parse --abbrev-ref HEAD)\"; git push origin $branch; }; f"
