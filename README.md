@@ -10,3 +10,5 @@ git clone https://github.com/mrhwick/gitconfig.git
 cd gitconfig
 cat gitconfig >> ~/.gitconfig
 ```
+
+Reload your terminal, and your Git client will have discovered the new aliased commands.
