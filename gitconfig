@@ -12,8 +12,9 @@ st = status -s
 co = checkout
 a = add
 ap = add -p
-rst = "!f() { git checkout dev; git pull upstream dev; }; f"
+rst = "!f() { git checkout dev; git reload; }; f"
 feat = "!f() { git checkout -b feature/$1; }; f"
 fix = "!f() { git checkout -b hotfix/$1; }; f"
 up = "!f () { branch=\"$(git rev-parse --abbrev-ref HEAD)\"; git push origin $branch; }; f"
+reload = "!f () { branch=\"$(git rev-parse --abbrev-ref HEAD)\"; git pull upstream $branch; }; f"
 delete-merged-branches = "!f () { git branch --merged | grep -v \"\\*\" | grep -v master | grep -v dev | grep -v staging | grep -v qa | xargs -n 1 git branch -d; }; f"
