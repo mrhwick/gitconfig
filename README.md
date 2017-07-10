@@ -1,4 +1,4 @@
-# Matt Hardwick's Git Configuration
+# Hardwick's Git Configuration
 
 These are my dark magic aliases that I prefer when I am using git.
 
@@ -53,7 +53,10 @@ Switched to a new branch 'hotfix/my-hot-repair'
 # Push the current branch commits to the same branch on the remote named origin
 git up
 
-# Pull the latest commits from the current branch name down from the remote named upstream.
+# Pull the latest commits from the current branch down from the remote named origin
+git down
+
+# Pull the latest commits from the current branch down from the remote named upstream.
 git reload
 
 # Delete all branches that have been merged into the latest commit on the current branch, excluding 'master', 'dev', 'staging', and 'qa'.
